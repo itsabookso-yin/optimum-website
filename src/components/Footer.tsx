@@ -14,20 +14,40 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="mb-3 font-semibold text-white">產品類別</h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
               <li>
                 <a href="#products" className="transition-colors hover:text-white">
-                  自動倉儲系統
+                  碼頭區周邊設備
                 </a>
               </li>
               <li>
                 <a href="#products" className="transition-colors hover:text-white">
-                  各式廠房門 / 車庫門
+                  一般廠辦工業用門
                 </a>
               </li>
               <li>
                 <a href="#products" className="transition-colors hover:text-white">
-                  藥廠物流及製程設備
+                  特殊需求工業用門
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="transition-colors hover:text-white">
+                  居家用門及車庫門
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="transition-colors hover:text-white">
+                  真空運搬設備
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="transition-colors hover:text-white">
+                  升降設備
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="transition-colors hover:text-white">
+                  藥廠物流設備
                 </a>
               </li>
               <li>
