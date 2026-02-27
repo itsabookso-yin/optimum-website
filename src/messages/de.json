@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "title": "OPTIMUM Automated Equipment Corp.",
+    "description": "Professionelle Lager- & Fördertechnik seit 1991"
+  },
+  "nav": {
+    "home": "Startseite",
+    "products": "Produktlinien",
+    "company": "Unternehmensprofil",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "heroTitle": "Ihr Experte für Fördertechnik-Lösungen",
+    "heroSubtitle": "Professionelle Lager- & Logistikausrüstung seit 1991",
+    "heroCta": "Produkte ansehen",
+    "featuredTitle": "Unsere Produktlinien",
+    "featuredSubtitle": "Umfassende Lösungen für Lagerhaltung, Logistik und Materialhandling",
+    "introTitle": "Über OPTIMUM",
+    "introText": "Seit 1991 ist OPTIMUM Automated Equipment Corp. ein renommierter Importeur und Berater für Lager- & Fördertechnik. Unsere spezialisierten Technik- und Vertriebsingenieure bieten zusammen mit erfahrenen Kundendienstgruppen die besten Lösungen für Ihre Anforderungen.",
+    "motto": "Alles OPTIMAL machen; OPTIMAL in allem.",
+    "ctaTitle": "Professionelle Beratung gewünscht?",
+    "ctaText": "Kontaktieren Sie uns für Lagerplanung, Materialflussberatung und Geräteempfehlungen.",
+    "ctaButton": "Kontaktieren Sie uns"
+  },
+  "products": {
+    "pageTitle": "Produktlinien",
+    "pageSubtitle": "Umfassende Lösungen für Ihre Materialhandling-Anforderungen",
+    "viewDetails": "Details ansehen",
+    "backToProducts": "Alle Produkte",
+    "subProducts": "Produkte in dieser Kategorie",
+    "features": "Merkmale"
+  },
+  "company": {
+    "pageTitle": "Unternehmensprofil",
+    "established": "Gegründet",
+    "address": "Adresse",
+    "salesRangeTitle": "Produktpalette",
+    "salesRange": [
+      "Überladebrücke",
+      "Torabdichtung",
+      "Hubtisch",
+      "LKW-Ladebordwand",
+      "Mobile Rampe",
+      "Sektionaltor",
+      "Pendeltür / Drehtür / Falttür",
+      "Schnelllauftor / Brandschutztür / Kühlhaustür",
+      "Garagentor / Torautomatik",
+      "Personen- / Materialaufzüge",
+      "Pharmazeutische Fördertechnik",
+      "Lagertechnik & Karussellsysteme",
+      "Vakuum-Hebetechnik"
+    ],
+    "backgroundTitle": "Hintergrund",
+    "backgroundText": "OPTIMUM Automated Equipment Corp. wurde 1991 als renommierter Importeur und Berater für Lager- & Fördertechnik gegründet. Unsere spezialisierten Technik- und Vertriebsingenieure bieten zusammen mit erfahrenen Kundendienstgruppen die beste Gesamtlösung und den besten Service für Fördertechnik. Über die Jahre haben wir durch Geschäftsbesuche, Seminare, Ausstellungen, Medienwerbung und die Expansion in den chinesischen Markt ein umfangreiches Netzwerk aufgebaut.",
+    "principleTitle": "Unternehmensgrundsatz",
+    "principleText": "Alles OPTIMAL machen; OPTIMAL in allem.",
+    "marketingTitle": "Marktexpansion",
+    "marketingText": "Unsere Marketingstrategie umfasst Netzwerkentwicklung durch Geschäftsbesuche, Organisation und Teilnahme an Seminaren und Ausstellungen, Medienwerbung sowie die Erweiterung unserer Reichweite auf den chinesischen Markt, um einen breiteren Kundenstamm zu bedienen.",
+    "afterSalesTitle": "Kundendienst",
+    "afterSalesText": "Unsere erfahrenen Servicetechniker werden von unseren Herstellern geschult und bieten professionelle Wartungs- und Reparaturdienste. Wir unterhalten Servicestützpunkte in Taiwan und China, um eine schnelle Reaktion auf Kundenbedürfnisse zu gewährleisten.",
+    "serviceDepotsTitle": "Servicestützpunkte",
+    "serviceDepots": [
+      "Nordtaiwan (Taipei)",
+      "Mitteltaiwan (Taichung)",
+      "Südtaiwan (Kaohsiung)",
+      "Volksrepublik China"
+    ]
+  },
+  "services": {
+    "pageTitle": "Dienstleistungen",
+    "pageSubtitle": "Professionelle Vorverkaufsberatung und zuverlässiger Kundendienst",
+    "preSalesTitle": "Vorverkaufsservice",
+    "preSalesSubtitle": "Professionelle Beratung vor Ihrem Kauf",
+    "afterSalesTitle": "Kundendienst",
+    "afterSalesSubtitle": "Zuverlässige Unterstützung nach Ihrem Kauf",
+    "items": {
+      "layout": {
+        "title": "Lagerplanung & Beratung",
+        "description": "Professionelle Lagerplanung und Beratungsdienstleistungen zur Optimierung Ihres Raums und Arbeitsablaufs."
+      },
+      "materialFlow": {
+        "title": "Materialflussplanung",
+        "description": "Experten-Materialflussplanung zur Maximierung der Effizienz Ihrer Logistikabläufe."
+      },
+      "consulting": {
+        "title": "Geräteberatung",
+        "description": "Beratung über die bestqualifizierten Anlagen auf Anfrage, passend zu Ihren spezifischen Anforderungen."
+      },
+      "routineMaintenance": {
+        "title": "Routinewartung",
+        "description": "Je nach Maschinenbetriebssituation und -bedingungen vereinbaren wir mit Kunden eine regelmäßige Wartung alle ein bis zwei Monate."
+      },
+      "callService": {
+        "title": "Notfall-Rufservice",
+        "description": "Notfall-Rufservice für dringende Situationen, um minimale Ausfallzeiten Ihrer Betriebsabläufe zu gewährleisten."
+      },
+      "spareParts": {
+        "title": "Ersatzteillager",
+        "description": "Wir lagern Ersatzteile, um unseren Kunden den besten Service zu bieten und schnelle Reparaturen und Wartungen zu ermöglichen."
+      }
+    }
+  },
+  "contact": {
+    "pageTitle": "Kontakt",
+    "pageSubtitle": "Wir freuen uns auf Ihre Nachricht",
+    "formIntro": "Wenn Sie weitere Informationen benötigen oder Anmerkungen zu unserer Website, unseren Produkten oder Dienstleistungen haben, geben Sie bitte Ihre Kontaktdaten an und wir werden so schnell wie möglich antworten.",
+    "name": "Name",
+    "title": "Titel",
+    "companyName": "Unternehmen",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "fax": "Fax",
+    "email": "E-Mail",
+    "comments": "Kommentare",
+    "submit": "Absenden",
+    "reset": "Zurücksetzen",
+    "required": "Pflichtfeld",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "successMessage": "Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "errorMessage": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+    "companyInfo": "Unternehmensinformationen"
+  },
+  "footer": {
+    "address": "8F, No. 214, Wen-Lin North Rd., Taipei 11287, Taiwan",
+    "phone": "Telefon",
+    "fax": "Fax",
+    "email": "E-Mail",
+    "copyright": "OPTIMUM Automated Equipment Corp. Alle Rechte vorbehalten.",
+    "quickLinks": "Schnelllinks"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "switchLang": "Deutsch"
+  }
+}

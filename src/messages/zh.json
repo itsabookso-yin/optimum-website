@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "title": "陽榮自動化設備有限公司",
+    "description": "自1991年起，專業倉儲暨物流設備進口商與顧問"
+  },
+  "nav": {
+    "home": "主頁",
+    "products": "產品系列",
+    "company": "公司簡介",
+    "services": "服務諮詢",
+    "contact": "聯絡我們"
+  },
+  "home": {
+    "heroTitle": "物流設備專業夥伴",
+    "heroSubtitle": "自1991年起，專業倉儲暨物流設備進口商與規劃顧問",
+    "heroCta": "瀏覽產品",
+    "featuredTitle": "產品系列",
+    "featuredSubtitle": "提供完整的倉儲、物流及物料搬運解決方案",
+    "introTitle": "關於陽榮",
+    "introText": "陽榮自動化設備有限公司創立於公元1991年，為國內專業倉儲暨物流設備進口商與規劃顧問公司。本公司擁有專業技術暨業務工程師，加上經驗豐富的售後服務團隊，能為客戶提供最佳的物流設備整體解決方案與服務。",
+    "motto": "做事最佳，最佳做事",
+    "ctaTitle": "需要專業諮詢？",
+    "ctaText": "歡迎洽詢倉儲規劃設計、物流動線規劃及設備規格建議。",
+    "ctaButton": "聯絡我們"
+  },
+  "products": {
+    "pageTitle": "產品系列",
+    "pageSubtitle": "滿足您物料搬運需求的完整解決方案",
+    "viewDetails": "查看詳情",
+    "backToProducts": "所有產品",
+    "subProducts": "此類別產品",
+    "features": "產品特點"
+  },
+  "company": {
+    "pageTitle": "公司簡介",
+    "established": "成立年份",
+    "address": "公司地址",
+    "salesRangeTitle": "營業項目",
+    "salesRange": [
+      "月台調整板",
+      "門封",
+      "升降平台",
+      "卡車尾門",
+      "斜坡台",
+      "快速捲門 / 組合式彩色鋼板門",
+      "自由乙乙門 / 迴乙門 / 乙門",
+      "快速捲門 / 防火門 / 冷凍庫門",
+      "車庫捲門 / 大乙大自動門",
+      "人員 / 貨物升降機",
+      "製藥設備物流系統",
+      "倉儲貨架系統",
+      "真空運搬設備"
+    ],
+    "backgroundTitle": "公司背景",
+    "backgroundText": "陽榮自動化設備有限公司創立於公元1991年，為國內專業倉儲暨物流設備進口商與規劃顧問公司。本公司擁有專業技術暨業務工程師，加上經驗豐富的售後服務團隊，透過多年來的業務拜訪、研討會、展覽會、媒體廣告及大陸市場開發，已建立了廣泛的行銷網絡。",
+    "principleTitle": "經營理念",
+    "principleText": "做事最佳，最佳做事",
+    "marketingTitle": "行銷策略",
+    "marketingText": "本公司透過業務拜訪、舉辦及參與研討會與展覽會、媒體廣告，以及拓展大陸市場，建立了完善的行銷網絡，以服務更廣泛的客戶群。",
+    "afterSalesTitle": "售後服務",
+    "afterSalesText": "本公司經驗豐富的服務工程師均經原廠專業訓練，提供專業的維修保養服務。我們在台灣及大陸設有服務據點，確保能迅速回應客戶需求。",
+    "serviceDepotsTitle": "服務據點",
+    "serviceDepots": [
+      "北區服務（台北）",
+      "中區服務（台中）",
+      "南區服務（高雄）",
+      "大陸地區"
+    ]
+  },
+  "services": {
+    "pageTitle": "服務諮詢",
+    "pageSubtitle": "專業的售前諮詢與可靠的售後支援",
+    "preSalesTitle": "前置產品與諮詢",
+    "preSalesSubtitle": "購買前的專業諮詢服務",
+    "afterSalesTitle": "售後服務",
+    "afterSalesSubtitle": "購買後的可靠支援",
+    "items": {
+      "layout": {
+        "title": "倉儲規劃設計",
+        "description": "專業的倉儲規劃設計與諮詢服務，優化您的空間與工作流程。"
+      },
+      "materialFlow": {
+        "title": "物流動線規劃",
+        "description": "專業的物流動線設計，最大化您物流作業的效率。"
+      },
+      "consulting": {
+        "title": "設備規格諮詢",
+        "description": "針對您的特定需求，提供最適合設備規格的建議與諮詢。"
+      },
+      "routineMaintenance": {
+        "title": "定期保養",
+        "description": "依據機器作業狀況與條件，與客戶簽約進行每一至兩個月的定期保養服務。"
+      },
+      "callService": {
+        "title": "緊急叫修服務",
+        "description": "提供緊急叫修服務，確保您的設備能在最短時間內恢復運作。"
+      },
+      "spareParts": {
+        "title": "備品庫存",
+        "description": "配合系統常備零件庫存，以提供最快速的維修保養服務。"
+      }
+    }
+  },
+  "contact": {
+    "pageTitle": "聯絡我們",
+    "pageSubtitle": "歡迎與我們聯繫",
+    "formIntro": "若您需要進一步的資訊，或對我們的網站、產品或服務有任何意見，請提供您的聯絡資訊，我們將盡速與您聯繫。",
+    "name": "姓名",
+    "title": "職稱",
+    "companyName": "公司",
+    "address": "地址",
+    "phone": "電話",
+    "fax": "傳真",
+    "email": "電子郵件",
+    "comments": "意見",
+    "submit": "送出",
+    "reset": "重設",
+    "required": "必填",
+    "invalidEmail": "請輸入有效的電子郵件地址",
+    "successMessage": "謝謝您的回函，我們會盡速與您聯絡。",
+    "errorMessage": "發生錯誤，請稍後再試。",
+    "companyInfo": "公司資訊"
+  },
+  "footer": {
+    "address": "11287 台北市北投區文林北路214號8樓",
+    "phone": "電話",
+    "fax": "傳真",
+    "email": "電子郵件",
+    "copyright": "陽榮自動化設備有限公司 版權所有",
+    "quickLinks": "快速連結"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "readMore": "閱讀更多",
+    "switchLang": "English"
+  }
+}

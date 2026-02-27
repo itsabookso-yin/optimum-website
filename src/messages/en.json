@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "title": "OPTIMUM Automated Equipment Corp.",
+    "description": "Professional warehousing & material handling equipment since 1991"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Product Line",
+    "company": "Company Profile",
+    "services": "Services",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "heroTitle": "Your Expert Partner in Material Handling Solutions",
+    "heroSubtitle": "Professional warehousing & logistics equipment since 1991",
+    "heroCta": "View Products",
+    "featuredTitle": "Our Product Lines",
+    "featuredSubtitle": "Comprehensive solutions for warehousing, logistics, and material handling",
+    "introTitle": "About OPTIMUM",
+    "introText": "Since 1991, OPTIMUM Automated Equipment Corp. has been a reputable importer and consultant of Warehousing & Material Handling Facilities. Our specialized technical & marketing engineers, together with experienced after-sales service groups, are positioned to offer the best solutions for your needs.",
+    "motto": "Doing Everything OPTIMUM; OPTIMUM to Everything.",
+    "ctaTitle": "Need Professional Consultation?",
+    "ctaText": "Contact us for warehousing layout design, material flow consulting, and equipment recommendations.",
+    "ctaButton": "Contact Us"
+  },
+  "products": {
+    "pageTitle": "Product Line",
+    "pageSubtitle": "Comprehensive solutions for your material handling needs",
+    "viewDetails": "View Details",
+    "backToProducts": "All Products",
+    "subProducts": "Products in this category",
+    "features": "Features"
+  },
+  "company": {
+    "pageTitle": "Company Profile",
+    "established": "Established",
+    "address": "Address",
+    "salesRangeTitle": "Sales Range",
+    "salesRange": [
+      "Dock Leveler",
+      "Dock Shelter",
+      "Table Lifter",
+      "Tail Lifter",
+      "Mobile Ramp",
+      "Overhead Sectional Door",
+      "Traffic Door / Swing Door / Folding Door",
+      "Speed Door / Fire Door / Cold-Storage Door",
+      "Garage Door / Entrance Gate Operator",
+      "Personnel / Material Lifts",
+      "Pharmaceutical Material Handling System",
+      "Warehousing Racking System & Carousel System",
+      "Vacuum-Lift Handling System"
+    ],
+    "backgroundTitle": "Background",
+    "backgroundText": "OPTIMUM Automated Equipment Corp. was established in 1991 as a reputable importer and consultant of Warehousing & Material Handling Facilities. Our specialized technical & marketing engineers, together with experienced after-sales service groups, are positioned to offer the best total solution and service of material handling equipment. We have developed an extensive network over these years through business visits, seminars, exhibitions, media advertising, and expansion into the China market.",
+    "principleTitle": "Business Principle",
+    "principleText": "Doing Everything OPTIMUM; OPTIMUM to Everything.",
+    "marketingTitle": "Marketing Expansion",
+    "marketingText": "Our marketing strategy includes network development through business visits, organizing and participating in seminars and exhibitions, media advertising, and expanding our reach into the China market to serve a broader customer base.",
+    "afterSalesTitle": "After-Sales Service",
+    "afterSalesText": "Our experienced service engineers are trained by our principal sources and provide professional maintenance and repair services. We maintain service depots across Taiwan and China to ensure prompt response to customer needs.",
+    "serviceDepotsTitle": "Service Depots",
+    "serviceDepots": [
+      "North of Taiwan (Taipei)",
+      "Middle of Taiwan (Taichung)",
+      "South of Taiwan (Kaohsiung)",
+      "People's Republic of China"
+    ]
+  },
+  "services": {
+    "pageTitle": "Services",
+    "pageSubtitle": "Professional pre-sales consulting and reliable after-sales support",
+    "preSalesTitle": "Pre-Sales Service",
+    "preSalesSubtitle": "Professional consulting before your purchase",
+    "afterSalesTitle": "After-Sales Service",
+    "afterSalesSubtitle": "Reliable support after your purchase",
+    "items": {
+      "layout": {
+        "title": "Warehousing Layout & Consulting",
+        "description": "Professional warehousing layout design and consulting services to optimize your space and workflow."
+      },
+      "materialFlow": {
+        "title": "Material Flow Design",
+        "description": "Expert material flow design to maximize efficiency in your logistics operations."
+      },
+      "consulting": {
+        "title": "Equipment Consulting",
+        "description": "Consulting of the best qualified facilities on request to match your specific requirements."
+      },
+      "routineMaintenance": {
+        "title": "Routine Maintenance",
+        "description": "According to the machine working situation and conditions, we contract with customers to do routine maintenance service each one or two months."
+      },
+      "callService": {
+        "title": "Emergency Call Service",
+        "description": "Emergency call service is available for urgent situations, ensuring minimal downtime for your operations."
+      },
+      "spareParts": {
+        "title": "Spare Parts Stock",
+        "description": "We stock spare parts to offer the best service to our customers, ensuring quick repairs and maintenance."
+      }
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "pageSubtitle": "We'd love to hear from you",
+    "formIntro": "If you need any further information, or have any comments about our website, products or services, please provide your contact information and we will reply as soon as possible.",
+    "name": "Name",
+    "title": "Title",
+    "companyName": "Company",
+    "address": "Address",
+    "phone": "Phone No.",
+    "fax": "Fax No.",
+    "email": "E-mail",
+    "comments": "Comments",
+    "submit": "Submit",
+    "reset": "Reset",
+    "required": "Required",
+    "invalidEmail": "Please enter a valid email address",
+    "successMessage": "Thank you for your message. We will contact you as soon as possible.",
+    "errorMessage": "Something went wrong. Please try again later.",
+    "companyInfo": "Company Information"
+  },
+  "footer": {
+    "address": "8F, No. 214, Wen-Lin North Rd., Taipei 11287, Taiwan",
+    "phone": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "copyright": "OPTIMUM Automated Equipment Corp. All rights reserved.",
+    "quickLinks": "Quick Links"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "switchLang": "中文"
+  }
+}
