@@ -9,45 +9,51 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { companyInfo } from '@/data/company';
 import { localized } from '@/lib/locale';
-import { submitContactForm } from '@/app/actions/contact';
 import { MapPin, Phone as PhoneIcon, Mail, Printer } from 'lucide-react';
-import { useState } from 'react';
 import { toast } from 'sonner';
 
 export default function ContactPage() {
   const t = useTranslations();
   const locale = useLocale();
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const title = formData.get('title') as string || '';
+    const company = formData.get('company') as string || '';
+    const address = formData.get('address') as string || '';
+    const phone = formData.get('phone') as string || '';
+    const fax = formData.get('fax') as string || '';
+    const email = formData.get('email') as string;
+    const comments = formData.get('message') as string;
 
-    try {
-      const result = await submitContactForm({
-        name: formData.get('name') as string,
-        title: formData.get('title') as string || '',
-        company: formData.get('company') as string || '',
-        address: formData.get('address') as string || '',
-        phone: formData.get('phone') as string || '',
-        fax: formData.get('fax') as string || '',
-        email: formData.get('email') as string,
-        comments: formData.get('message') as string,
-      });
-
-      if (result.success) {
-        toast.success(t('contact.successMessage'));
-        (e.target as HTMLFormElement).reset();
-      } else {
-        toast.error(t('contact.errorMessage'));
-      }
-    } catch {
+    if (!name || !email || !comments) {
       toast.error(t('contact.errorMessage'));
-    } finally {
-      setIsSubmitting(false);
+      return;
     }
+
+    // Build mailto body
+    const lines = [
+      `Name: ${name}`,
+      title ? `Title: ${title}` : '',
+      company ? `Company: ${company}` : '',
+      address ? `Address: ${address}` : '',
+      phone ? `Phone: ${phone}` : '',
+      fax ? `Fax: ${fax}` : '',
+      `Email: ${email}`,
+      '',
+      `Comments:`,
+      comments,
+    ].filter(Boolean);
+
+    const subject = encodeURIComponent(`Website Inquiry from ${name}`);
+    const body = encodeURIComponent(lines.join('\n'));
+
+    window.location.href = `mailto:${companyInfo.email}?subject=${subject}&body=${body}`;
+
+    toast.success(t('contact.successMessage'));
   }
 
   return (
@@ -67,9 +73,6 @@ export default function ContactPage() {
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Hidden field for Formspree to know the recipient */}
-                <input type="hidden" name="_replyto" />
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="name">
@@ -122,10 +125,9 @@ export default function ContactPage() {
                 <div className="flex gap-4">
                   <Button
                     type="submit"
-                    disabled={isSubmitting}
                     className="bg-[#0099CC] hover:bg-[#007AA3] text-white"
                   >
-                    {isSubmitting ? '...' : t('contact.submit')}
+                    {t('contact.submit')}
                   </Button>
                   <Button type="reset" variant="outline">
                     {t('contact.reset')}

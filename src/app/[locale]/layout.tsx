@@ -1,12 +1,17 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { locales } from '@/i18n/config';
 import { inter, notoSansTC } from '@/styles/fonts';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/sonner';
 import '../globals.css';
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 type Props = {
   children: React.ReactNode;
@@ -19,6 +24,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!routing.locales.includes(locale as 'en' | 'zh' | 'de')) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 
