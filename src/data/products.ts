@@ -1,3 +1,7 @@
+import { BASE_PATH } from '@/lib/utils';
+
+const bp = (path: string) => `${BASE_PATH}${path}`;
+
 export interface ProductItem {
   id: string;
   nameEn: string;
@@ -35,7 +39,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Complete dock loading solutions for efficient logistics operations',
     descriptionZh: '完整的碼頭裝卸設備解決方案，提升物流作業效率',
     descriptionDe: 'Komplette Verladelösungen für effiziente Logistikabläufe',
-    thumbnail: '/images/products/dock-loading/15-pw.jpg',
+    thumbnail: bp('/images/products/dock-loading/15-pw.jpg'),
     items: [
       {
         id: 'dock-leveler',
@@ -45,7 +49,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Adjusts the height difference between the dock and the container truck platform, improving loading/unloading speed.',
         descriptionZh: '調整貨櫃月台與貨櫃車台高低差，提昇作業速度，省時省力。',
         descriptionDe: 'Gleicht den Höhenunterschied zwischen Rampe und LKW-Ladefläche aus und verbessert die Be-/Entladegeschwindigkeit.',
-        images: ['/images/products/dock-loading/15-pw.jpg'],
+        images: [bp('/images/products/dock-loading/15-pw.jpg')],
         features: {
           en: ['Adjusts dock-to-truck height difference', 'Improves loading/unloading speed', 'Saves time and effort'],
           zh: ['調整貨櫃月台與貨櫃車台高低差', '提昇作業速度', '省時省力'],
@@ -61,10 +65,10 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '銜接貨櫃車或冷凍車與廠房之間的緩衝氣密設備。',
         descriptionDe: 'Dichtet den Spalt zwischen LKW und Gebäude für Klimakontrolle und Schutz ab.',
         images: [
-          '/images/products/dock-loading/11-system.jpg',
-          '/images/products/dock-loading/12-shtl.jpg',
-          '/images/products/dock-loading/13-system.jpg',
-          '/images/products/dock-loading/14-shtl.jpg',
+          bp('/images/products/dock-loading/11-system.jpg'),
+          bp('/images/products/dock-loading/12-shtl.jpg'),
+          bp('/images/products/dock-loading/13-system.jpg'),
+          bp('/images/products/dock-loading/14-shtl.jpg'),
         ],
         features: {
           en: ['Buffer seal between truck and building', 'Prevents cold air loss', 'Prevents insects and dust from entering'],
@@ -81,9 +85,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '油壓升降平台，調整貨物高度，方便裝卸作業。',
         descriptionDe: 'Hydraulischer Hubtisch zur Höhenanpassung der Ladung beim Be-/Entladen.',
         images: [
-          '/images/products/dock-loading/16-mc.jpg',
-          '/images/products/dock-loading/17-mc.jpg',
-          '/images/products/dock-loading/18-mc.jpg',
+          bp('/images/products/dock-loading/16-mc.jpg'),
+          bp('/images/products/dock-loading/17-mc.jpg'),
+          bp('/images/products/dock-loading/18-mc.jpg'),
         ],
         features: {
           en: ['Hydraulic lifting mechanism', 'Adjustable height', 'Heavy-duty capacity'],
@@ -99,7 +103,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Truck tail lifter for efficient loading and unloading without dock facilities.',
         descriptionZh: '卡車尾門升降設備，無需碼頭設施即可高效裝卸。',
         descriptionDe: 'LKW-Ladebordwand für effizientes Be- und Entladen ohne Rampenanlagen.',
-        images: ['/images/products/dock-loading/19-mb.jpg'],
+        images: [bp('/images/products/dock-loading/19-mb.jpg')],
         features: {
           en: ['Efficient loading/unloading', 'No dock required', 'Easy operation'],
           zh: ['高效裝卸', '無需碼頭設施', '操作簡便'],
@@ -115,8 +119,8 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '移動式斜坡台，銜接月台與貨車間的高低差，方便堆高機進出。',
         descriptionDe: 'Mobile Rampe zur Überbrückung des Höhenunterschieds zwischen Rampe und LKW für Staplerzugang.',
         images: [
-          '/images/products/dock-loading/1-11-dyna-mobile-rampe.jpg',
-          '/images/products/dock-loading/7-jh-containeramp-c.jpg',
+          bp('/images/products/dock-loading/1-11-dyna-mobile-rampe.jpg'),
+          bp('/images/products/dock-loading/7-jh-containeramp-c.jpg'),
         ],
         features: {
           en: ['Mobile and flexible', 'Forklift accessible', 'Heavy load capacity'],
@@ -133,9 +137,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '拖車支撐架，穩定貨櫃車定位。',
         descriptionDe: 'Anhängerstützen für eine stabile Positionierung von Container-LKW.',
         images: [
-          '/images/products/dock-loading/1-13-jh-trailer-jack.jpg',
-          '/images/products/dock-loading/1-13-jh-trailer-jack-002.jpg',
-          '/images/products/dock-loading/1-13-rh-trailer-stand.jpg',
+          bp('/images/products/dock-loading/1-13-jh-trailer-jack.jpg'),
+          bp('/images/products/dock-loading/1-13-jh-trailer-jack-002.jpg'),
+          bp('/images/products/dock-loading/1-13-rh-trailer-stand.jpg'),
         ],
         features: {
           en: ['Stable positioning', 'Heavy-duty support', 'Easy deployment'],
@@ -151,7 +155,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Dock bumpers to protect the dock structure from truck impact damage.',
         descriptionZh: '碼頭防撞器，保護月台結構免受貨車撞擊損壞。',
         descriptionDe: 'Rammschutzpuffer zum Schutz der Rampenstruktur vor LKW-Aufprallschäden.',
-        images: ['/images/products/dock-loading/19-mb-trn.gif'],
+        images: [bp('/images/products/dock-loading/19-mb-trn.gif')],
         features: {
           en: ['Protects dock structure', 'Absorbs impact', 'Durable rubber material'],
           zh: ['保護月台結構', '吸收撞擊力', '耐用橡膠材質'],
@@ -166,7 +170,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Edge of dock leveler for light-duty applications where a full dock leveler is not required.',
         descriptionZh: '月台邊板，適用於輕載作業，無需安裝完整的月台調整板。',
         descriptionDe: 'Rampenkanten-Ausgleich für leichte Anwendungen, bei denen keine vollständige Überladebrücke erforderlich ist.',
-        images: ['/images/products/dock-loading/1-10-edge.jpg'],
+        images: [bp('/images/products/dock-loading/1-10-edge.jpg')],
         features: {
           en: ['Light-duty applications', 'Cost-effective solution', 'Easy installation'],
           zh: ['適用輕載作業', '經濟實惠', '安裝簡便'],
@@ -181,7 +185,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Loading dock lights for safe nighttime operations.',
         descriptionZh: '碼頭照明設備，確保夜間作業安全。',
         descriptionDe: 'Verladerampen-Beleuchtung für sicheren Nachtbetrieb.',
-        images: ['/images/products/dock-loading/1-12-fostoria-light.jpg'],
+        images: [bp('/images/products/dock-loading/1-12-fostoria-light.jpg')],
       },
     ],
   },
@@ -193,7 +197,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Professional door systems for industrial and commercial applications',
     descriptionZh: '適用於工業及商業環境的專業門禁系統',
     descriptionDe: 'Professionelle Torsysteme für industrielle und gewerbliche Anwendungen',
-    thumbnail: '/images/products/door-system/21-stnl.jpg',
+    thumbnail: bp('/images/products/door-system/21-stnl.jpg'),
     items: [
       {
         id: 'overhead-sectional',
@@ -204,10 +208,10 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '組合式彩色鋼板門，具隔熱保溫效果，適用於工業廠房。',
         descriptionDe: 'Sektionaltore mit isolierten Paneelen für Industriegebäude.',
         images: [
-          '/images/products/door-system/21-stnl.jpg',
-          '/images/products/door-system/22-stnl.jpg',
-          '/images/products/door-system/23-stnl.jpg',
-          '/images/products/door-system/24-stnl-layout.jpg',
+          bp('/images/products/door-system/21-stnl.jpg'),
+          bp('/images/products/door-system/22-stnl.jpg'),
+          bp('/images/products/door-system/23-stnl.jpg'),
+          bp('/images/products/door-system/24-stnl-layout.jpg'),
         ],
         features: {
           en: ['Insulated panels', 'Various sizes available', 'Electric or manual operation'],
@@ -223,7 +227,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Swing doors for clean room and food processing environments.',
         descriptionZh: '適用於無塵室及食品加工環境的迴轉門。',
         descriptionDe: 'Pendeltüren für Reinraum- und Lebensmittelverarbeitungsumgebungen.',
-        images: ['/images/products/door-system/25-swing.jpg', '/images/products/door-system/26-swing.jpg'],
+        images: [bp('/images/products/door-system/25-swing.jpg'), bp('/images/products/door-system/26-swing.jpg')],
         features: {
           en: ['Clean room compatible', 'Easy passage', 'Hygienic design'],
           zh: ['適用無塵室', '通行便利', '衛生設計'],
@@ -238,7 +242,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'PVC strip curtains for temperature zone separation.',
         descriptionZh: 'PVC門簾，用於溫區隔離。',
         descriptionDe: 'PVC-Streifenvorhänge zur Temperaturzonentrennung.',
-        images: ['/images/products/door-system/27-strp.jpg'],
+        images: [bp('/images/products/door-system/27-strp.jpg')],
         features: {
           en: ['Temperature zone separation', 'Easy passage', 'Cost effective'],
           zh: ['溫區隔離', '通行方便', '經濟實惠'],
@@ -253,7 +257,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Space-saving folding doors for wide openings.',
         descriptionZh: '節省空間的摺疊門，適用於大開口區域。',
         descriptionDe: 'Platzsparende Falttüren für breite Öffnungen.',
-        images: ['/images/products/door-system/28-folding.jpg', '/images/products/door-system/29-folding.jpg'],
+        images: [bp('/images/products/door-system/28-folding.jpg'), bp('/images/products/door-system/29-folding.jpg')],
         features: {
           en: ['Space-saving design', 'Wide opening capability', 'Durable construction'],
           zh: ['節省空間設計', '大開口能力', '堅固耐用'],
@@ -268,7 +272,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Automatic gate operators for residential and commercial entrances.',
         descriptionZh: '適用於住宅及商業入口的自動門機。',
         descriptionDe: 'Automatische Torantriebe für Wohn- und Gewerbeingänge.',
-        images: ['/images/products/door-system/2-10-optr.jpg', '/images/products/door-system/2-11-gate.jpg'],
+        images: [bp('/images/products/door-system/2-10-optr.jpg'), bp('/images/products/door-system/2-11-gate.jpg')],
         features: {
           en: ['Automatic gate operation', 'Security integration', 'Weather resistant'],
           zh: ['自動開門', '安全整合', '耐候設計'],
@@ -284,9 +288,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '適用於商業大樓的專業辦公室門。',
         descriptionDe: 'Professionelle Bürotüren für Geschäftsgebäude.',
         images: [
-          '/images/products/door-system/2-12-office.jpg',
-          '/images/products/door-system/2-13-office.jpg',
-          '/images/products/door-system/2-14-office.jpg',
+          bp('/images/products/door-system/2-12-office.jpg'),
+          bp('/images/products/door-system/2-13-office.jpg'),
+          bp('/images/products/door-system/2-14-office.jpg'),
         ],
       },
     ],
@@ -299,7 +303,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Specialized door solutions for demanding environments',
     descriptionZh: '適用於特殊環境需求的專業門禁解決方案',
     descriptionDe: 'Spezialisierte Türlösungen für anspruchsvolle Umgebungen',
-    thumbnail: '/images/products/special-door/32-sp.jpg',
+    thumbnail: bp('/images/products/special-door/32-sp.jpg'),
     items: [
       {
         id: 'speed-door',
@@ -309,7 +313,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'High-speed roll-up doors for areas requiring fast opening and closing.',
         descriptionZh: '高速捲門，適用於需要快速開關的區域。',
         descriptionDe: 'Schnelllauftore für Bereiche, die schnelles Öffnen und Schließen erfordern.',
-        images: ['/images/products/special-door/32-sp.jpg', '/images/products/special-door/33-sp.jpg'],
+        images: [bp('/images/products/special-door/32-sp.jpg'), bp('/images/products/special-door/33-sp.jpg')],
         features: {
           en: ['High-speed operation', 'Energy efficient', 'Automatic sensors'],
           zh: ['高速開關', '節能效果', '自動感應'],
@@ -324,7 +328,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Fire-rated doors for fire compartmentalization and safety.',
         descriptionZh: '防火門，用於防火分區隔離及安全防護。',
         descriptionDe: 'Brandschutztüren für Brandabschottung und Sicherheit.',
-        images: ['/images/products/special-door/36-fire.jpg'],
+        images: [bp('/images/products/special-door/36-fire.jpg')],
         features: {
           en: ['Fire-rated protection', 'Automatic closing', 'Safety certified'],
           zh: ['防火等級認證', '自動關閉', '安全認證'],
@@ -340,9 +344,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '隔熱保溫門，適用於冷凍庫及冷藏設施。',
         descriptionDe: 'Isolierte Türen für Kühlhäuser und Kühlanlagen.',
         images: [
-          '/images/products/special-door/31-cold.jpg',
-          '/images/products/special-door/34-cold-sp.jpg',
-          '/images/products/special-door/35-cold.jpg',
+          bp('/images/products/special-door/31-cold.jpg'),
+          bp('/images/products/special-door/34-cold-sp.jpg'),
+          bp('/images/products/special-door/35-cold.jpg'),
         ],
         features: {
           en: ['Heavy insulation', 'Airtight seal', 'Temperature rated'],
@@ -358,7 +362,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Anti-explosion doors for hazardous environments.',
         descriptionZh: '防爆門，適用於危險環境。',
         descriptionDe: 'Explosionsschutztüren für Gefahrenbereiche.',
-        images: ['/images/products/special-door/3-anti-explosion.jpg'],
+        images: [bp('/images/products/special-door/3-anti-explosion.jpg')],
         features: {
           en: ['Explosion resistant', 'Safety certified', 'Heavy-duty construction'],
           zh: ['耐爆設計', '安全認證', '重型結構'],
@@ -375,7 +379,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Residential garage doors and entrance gate operators',
     descriptionZh: '居家車庫門及大門自動門系統',
     descriptionDe: 'Garagentore und Torautomatik für den Wohnbereich',
-    thumbnail: '/images/products/garage-door/41-villa.jpg',
+    thumbnail: bp('/images/products/garage-door/41-villa.jpg'),
     items: [
       {
         id: 'villa-door',
@@ -386,9 +390,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '優雅別墅門搭配自動開門機，方便又安全。',
         descriptionDe: 'Elegante Villentüren mit automatischem Antrieb für Komfort und Sicherheit.',
         images: [
-          '/images/products/garage-door/41-villa.jpg',
-          '/images/products/garage-door/42-villa.jpg',
-          '/images/products/garage-door/43-villa.jpg',
+          bp('/images/products/garage-door/41-villa.jpg'),
+          bp('/images/products/garage-door/42-villa.jpg'),
+          bp('/images/products/garage-door/43-villa.jpg'),
         ],
         features: {
           en: ['Automatic operation', 'Remote control', 'Elegant design'],
@@ -405,9 +409,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '居家車庫門搭配自動開門機。',
         descriptionDe: 'Garagentore für den Wohnbereich mit automatischem Antrieb.',
         images: [
-          '/images/products/garage-door/44-garage.jpg',
-          '/images/products/garage-door/45-garage-wooden.jpg',
-          '/images/products/garage-door/46-garage.jpg',
+          bp('/images/products/garage-door/44-garage.jpg'),
+          bp('/images/products/garage-door/45-garage-wooden.jpg'),
+          bp('/images/products/garage-door/46-garage.jpg'),
         ],
         features: {
           en: ['Automatic operation', 'Safety sensors', 'Various materials'],
@@ -425,7 +429,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Personnel and material lift systems for vertical transportation',
     descriptionZh: '人員及貨物升降系統，滿足垂直運輸需求',
     descriptionDe: 'Personen- und Materialaufzüge für den vertikalen Transport',
-    thumbnail: '/images/products/lift-system/51-lift.jpg',
+    thumbnail: bp('/images/products/lift-system/51-lift.jpg'),
     items: [
       {
         id: 'goods-lift',
@@ -435,7 +439,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Heavy-duty goods lifts for efficient vertical cargo transportation.',
         descriptionZh: '重型貨物升降機，高效垂直貨物運輸。',
         descriptionDe: 'Schwerlast-Lastenaufzüge für effizienten vertikalen Gütertransport.',
-        images: ['/images/products/lift-system/51-lift.jpg'],
+        images: [bp('/images/products/lift-system/51-lift.jpg')],
         features: {
           en: ['Heavy load capacity', 'Reliable operation', 'Safety features'],
           zh: ['重載能力', '運行可靠', '安全防護'],
@@ -450,7 +454,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Safe and reliable personnel lifts for multi-level facilities.',
         descriptionZh: '安全可靠的人員升降機，適用於多層設施。',
         descriptionDe: 'Sichere und zuverlässige Personenaufzüge für mehrstöckige Einrichtungen.',
-        images: ['/images/products/lift-system/52-lift.jpg'],
+        images: [bp('/images/products/lift-system/52-lift.jpg')],
         features: {
           en: ['Safety certified', 'Smooth operation', 'Multiple capacity options'],
           zh: ['安全認證', '運行平穩', '多種載重選擇'],
@@ -467,7 +471,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Pharmaceutical material handling and processing equipment',
     descriptionZh: '製藥物料搬運及加工設備系統',
     descriptionDe: 'Pharmazeutische Materialhandhabungs- und Verarbeitungsanlagen',
-    thumbnail: '/images/products/pharmacy-system/61-ds-flu.jpg',
+    thumbnail: bp('/images/products/pharmacy-system/61-ds-flu.jpg'),
     items: [
       {
         id: 'fluid-bed',
@@ -478,8 +482,8 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Diosna流動床系統，用於製藥造粒及乾燥。',
         descriptionDe: 'Diosna-Wirbelschichtsysteme für pharmazeutische Granulation und Trocknung.',
         images: [
-          '/images/products/pharmacy-system/61-ds-flu.jpg',
-          '/images/products/pharmacy-system/64-ds-fluid-bed.jpg',
+          bp('/images/products/pharmacy-system/61-ds-flu.jpg'),
+          bp('/images/products/pharmacy-system/64-ds-fluid-bed.jpg'),
         ],
         features: {
           en: ['Precise granulation', 'High throughput', 'GMP compliant'],
@@ -496,8 +500,8 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Diosna膜衣包覆系統，用於錠劑包衣。',
         descriptionDe: 'Diosna-Beschichtungssysteme für pharmazeutische Tabletten.',
         images: [
-          '/images/products/pharmacy-system/62-ds-coater-2.jpg',
-          '/images/products/pharmacy-system/63-ds-coater.jpg',
+          bp('/images/products/pharmacy-system/62-ds-coater-2.jpg'),
+          bp('/images/products/pharmacy-system/63-ds-coater.jpg'),
         ],
         features: {
           en: ['Uniform coating', 'Automated process', 'GMP compliant'],
@@ -514,8 +518,8 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Diosna混合造粒機，用於製藥粉體加工。',
         descriptionDe: 'Diosna-Mischgranulatoren für pharmazeutische Pulververarbeitung.',
         images: [
-          '/images/products/pharmacy-system/65-ds-mixer-granulator.jpg',
-          '/images/products/pharmacy-system/66-ds-mixer.jpg',
+          bp('/images/products/pharmacy-system/65-ds-mixer-granulator.jpg'),
+          bp('/images/products/pharmacy-system/66-ds-mixer.jpg'),
         ],
         features: {
           en: ['Uniform mixing', 'Various capacities', 'GMP compliant'],
@@ -532,9 +536,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Muller不鏽鋼製藥容器，用於物料儲存及運輸。',
         descriptionDe: 'Muller-Edelstahl-Pharmabehälter für Materiallagerung und -transport.',
         images: [
-          '/images/products/pharmacy-system/6-10-muller-drum.jpg',
-          '/images/products/pharmacy-system/6-11-muller-drum.jpg',
-          '/images/products/pharmacy-system/6-12-muller-drum.jpg',
+          bp('/images/products/pharmacy-system/6-10-muller-drum.jpg'),
+          bp('/images/products/pharmacy-system/6-11-muller-drum.jpg'),
+          bp('/images/products/pharmacy-system/6-12-muller-drum.jpg'),
         ],
         features: {
           en: ['Stainless steel construction', 'GMP compliant', 'Easy cleaning'],
@@ -551,9 +555,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Hamo自動清洗系統，用於製藥設備清洗。',
         descriptionDe: 'Hamo-Reinigungssysteme für pharmazeutische Anlagen.',
         images: [
-          '/images/products/pharmacy-system/67-hamo-auto-system.jpg',
-          '/images/products/pharmacy-system/68-hamo-basket.jpg',
-          '/images/products/pharmacy-system/69-hamo-drum.jpg',
+          bp('/images/products/pharmacy-system/67-hamo-auto-system.jpg'),
+          bp('/images/products/pharmacy-system/68-hamo-basket.jpg'),
+          bp('/images/products/pharmacy-system/69-hamo-drum.jpg'),
         ],
         features: {
           en: ['Automatic operation', 'Thorough cleaning', 'GMP validated'],
@@ -569,7 +573,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Schneider pharmaceutical processing equipment.',
         descriptionZh: 'Schneider製藥加工設備。',
         descriptionDe: 'Schneider pharmazeutische Verarbeitungsanlagen.',
-        images: ['/images/products/pharmacy-system/6-11-schneider.jpg'],
+        images: [bp('/images/products/pharmacy-system/6-11-schneider.jpg')],
       },
     ],
   },
@@ -581,7 +585,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Warehousing accessories and protection systems',
     descriptionZh: '倉儲週邊配件及保護系統',
     descriptionDe: 'Lagerzubehör und Schutzsysteme',
-    thumbnail: '/images/products/warehousing/71-pwl-bumper-d6.jpg',
+    thumbnail: bp('/images/products/warehousing/71-pwl-bumper-d6.jpg'),
     items: [
       {
         id: 'bumper',
@@ -591,7 +595,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Heavy-duty dock bumpers for building protection.',
         descriptionZh: '重型碼頭防撞器，保護建築結構。',
         descriptionDe: 'Schwerlast-Rampenpuffer zum Gebäudeschutz.',
-        images: ['/images/products/warehousing/71-pwl-bumper-d6.jpg'],
+        images: [bp('/images/products/warehousing/71-pwl-bumper-d6.jpg')],
       },
       {
         id: 'corner-guard',
@@ -601,7 +605,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Corner protection guards for building columns and corners.',
         descriptionZh: '建築柱角及轉角保護器。',
         descriptionDe: 'Eckschutzprofile für Gebäudesäulen und Ecken.',
-        images: ['/images/products/warehousing/71-pwl-corner-guard.jpg'],
+        images: [bp('/images/products/warehousing/71-pwl-corner-guard.jpg')],
       },
       {
         id: 'parking-block',
@@ -611,7 +615,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Rubber parking blocks for vehicle positioning.',
         descriptionZh: '橡膠停車墩，用於車輛定位。',
         descriptionDe: 'Gummi-Parkplatzsperren zur Fahrzeugpositionierung.',
-        images: ['/images/products/warehousing/72-pwl-parking-blocks.jpg'],
+        images: [bp('/images/products/warehousing/72-pwl-parking-blocks.jpg')],
       },
       {
         id: 'scraping-system',
@@ -622,9 +626,9 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '工業刮除清潔系統。',
         descriptionDe: 'Industrielle Abstreif- und Reinigungssysteme.',
         images: [
-          '/images/products/warehousing/73-pwl-scraping.jpg',
-          '/images/products/warehousing/73-pwl-scraping-a.jpg',
-          '/images/products/warehousing/73-pwl-scraping-b.jpg',
+          bp('/images/products/warehousing/73-pwl-scraping.jpg'),
+          bp('/images/products/warehousing/73-pwl-scraping-a.jpg'),
+          bp('/images/products/warehousing/73-pwl-scraping-b.jpg'),
         ],
       },
     ],
@@ -637,7 +641,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Vacuum-lift handling systems for ergonomic material transport',
     descriptionZh: '真空吸取搬運系統，符合人體工學的物料搬運方案',
     descriptionDe: 'Vakuum-Hebeanlagen für ergonomischen Materialtransport',
-    thumbnail: '/images/products/vacuum-lift/8-schmalz-cardboard-box-a.jpg',
+    thumbnail: bp('/images/products/vacuum-lift/8-schmalz-cardboard-box-a.jpg'),
     items: [
       {
         id: 'schmalz-vacuum',
@@ -648,15 +652,15 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Schmalz真空吸取搬運系統，適用於各種工件，更快速、更符合人體工學。',
         descriptionDe: 'Schmalz Vakuum-Hebesysteme für verschiedene Werkstücke — schneller, ergonomischer und effizienter.',
         images: [
-          '/images/products/vacuum-lift/8-schmalz-cardboard-box-a.jpg',
-          '/images/products/vacuum-lift/8-schmalz-cardboard-box-b.jpg',
-          '/images/products/vacuum-lift/8-schmalz-barrel.jpg',
-          '/images/products/vacuum-lift/8-schmalz-metal.jpg',
-          '/images/products/vacuum-lift/8-schmalz-sheet-metal.jpg',
-          '/images/products/vacuum-lift/8-schmalz-sacks.jpg',
-          '/images/products/vacuum-lift/8-schmalz-coils-and-rings.jpg',
-          '/images/products/vacuum-lift/8-schmalz-jumbo.jpg',
-          '/images/products/vacuum-lift/8-schmalz-special-applications.jpg',
+          bp('/images/products/vacuum-lift/8-schmalz-cardboard-box-a.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-cardboard-box-b.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-barrel.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-metal.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-sheet-metal.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-sacks.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-coils-and-rings.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-jumbo.jpg'),
+          bp('/images/products/vacuum-lift/8-schmalz-special-applications.jpg'),
         ],
         features: {
           en: ['Ergonomic design', 'Fast and efficient', 'Various workpiece compatibility', 'Reduces worker fatigue'],
@@ -673,13 +677,13 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'MANUT真空吸取及棧板化系統，用於工業物料搬運。',
         descriptionDe: 'MANUT Vakuum-Hebe- und Palettierungssysteme für industrielle Materialhandhabung.',
         images: [
-          '/images/products/vacuum-lift/8-manut-01.jpg',
-          '/images/products/vacuum-lift/8-manut-02.jpg',
-          '/images/products/vacuum-lift/8-manut-03.jpg',
-          '/images/products/vacuum-lift/8-manut-manutention.jpg',
-          '/images/products/vacuum-lift/8-manut-palettisation.jpg',
-          '/images/products/vacuum-lift/8-manut-barres2jambon.jpg',
-          '/images/products/vacuum-lift/8-manut-mv.jpg',
+          bp('/images/products/vacuum-lift/8-manut-01.jpg'),
+          bp('/images/products/vacuum-lift/8-manut-02.jpg'),
+          bp('/images/products/vacuum-lift/8-manut-03.jpg'),
+          bp('/images/products/vacuum-lift/8-manut-manutention.jpg'),
+          bp('/images/products/vacuum-lift/8-manut-palettisation.jpg'),
+          bp('/images/products/vacuum-lift/8-manut-barres2jambon.jpg'),
+          bp('/images/products/vacuum-lift/8-manut-mv.jpg'),
         ],
         features: {
           en: ['Industrial-grade', 'Palletisation capability', 'Various handling modes'],
@@ -697,7 +701,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Accessible platform lift systems for barrier-free environments',
     descriptionZh: '無障礙升降平台系統，打造無障礙環境',
     descriptionDe: 'Barrierefreie Plattformliftsysteme für hindernisfreie Umgebungen',
-    thumbnail: '/images/products/platform-lift/9-cama-platform-lift-01.jpg',
+    thumbnail: bp('/images/products/platform-lift/9-cama-platform-lift-01.jpg'),
     items: [
       {
         id: 'platform-lift',
@@ -708,11 +712,11 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Cama無障礙升降平台系統，為建築物及公共空間提供無障礙通行。',
         descriptionDe: 'Cama barrierefreie Plattformliftsysteme für hindernisfreien Zugang in Gebäuden und öffentlichen Räumen.',
         images: [
-          '/images/products/platform-lift/9-cama-platform-lift-01.jpg',
-          '/images/products/platform-lift/9-cama-platform-lift-02.jpg',
-          '/images/products/platform-lift/9-cama-platform-lift-03.jpg',
-          '/images/products/platform-lift/9-cama-platform-lift-04.jpg',
-          '/images/products/platform-lift/9-cama-platform-lift-05.jpg',
+          bp('/images/products/platform-lift/9-cama-platform-lift-01.jpg'),
+          bp('/images/products/platform-lift/9-cama-platform-lift-02.jpg'),
+          bp('/images/products/platform-lift/9-cama-platform-lift-03.jpg'),
+          bp('/images/products/platform-lift/9-cama-platform-lift-04.jpg'),
+          bp('/images/products/platform-lift/9-cama-platform-lift-05.jpg'),
         ],
         features: {
           en: ['Barrier-free access', 'Safety certified', 'Indoor and outdoor use', 'Various platform sizes'],

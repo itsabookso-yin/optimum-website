@@ -9,6 +9,7 @@ import { SectionHeading } from '@/components/shared/section-heading';
 import { productCategories } from '@/data/products';
 import { localized } from '@/lib/locale';
 import { ArrowRight, ChevronRight } from 'lucide-react';
+import { assetPath } from '@/lib/utils';
 
 export default function HomePage() {
   const t = useTranslations();
@@ -104,7 +105,7 @@ export default function HomePage() {
             </div>
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-100">
               <Image
-                src="/images/hero/home-hero-main.jpg"
+                src={assetPath("/images/hero/home-hero-main.jpg")}
                 alt="OPTIMUM products"
                 fill
                 className="object-cover"

@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 import { LanguageSwitcher } from './language-switcher';
 import { mainNavItems } from '@/data/navigation';
 import { useState } from 'react';
+import { assetPath } from '@/lib/utils';
 
 export function Navbar() {
   const t = useTranslations();
@@ -21,7 +22,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2">
           <Image
-            src="/images/logo/optimum-logo.gif"
+            src={assetPath("/images/logo/optimum-logo.gif")}
             alt="OPTIMUM"
             width={150}
             height={40}
