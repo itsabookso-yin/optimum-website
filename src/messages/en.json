@@ -8,6 +8,7 @@
     "products": "Product Line",
     "company": "Company Profile",
     "services": "Services",
+    "brands": "Brands",
     "contact": "Contact Us"
   },
   "home": {
@@ -100,6 +101,16 @@
         "description": "We stock spare parts to offer the best service to our customers, ensuring quick repairs and maintenance."
       }
     }
+  },
+  "brands": {
+    "pageTitle": "Our Brands",
+    "pageSubtitle": "Authorized distributor of world-class industrial equipment brands",
+    "intro": "As an authorized distributor and partner of leading international brands, OPTIMUM brings you the highest quality industrial equipment from Europe and around the world. Each partnership is built on decades of trust and technical expertise.",
+    "visitWebsite": "Visit Website",
+    "relatedProducts": "Related Products",
+    "verifiedPartner": "Verified Partner",
+    "viewOnWebsite": "View on official website",
+    "screenshotCaption": "OPTIMUM listed on official brand website"
   },
   "contact": {
     "pageTitle": "Contact Us",

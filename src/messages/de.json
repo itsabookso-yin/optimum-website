@@ -8,6 +8,7 @@
     "products": "Produktlinien",
     "company": "Unternehmensprofil",
     "services": "Dienstleistungen",
+    "brands": "Marken",
     "contact": "Kontakt"
   },
   "home": {
@@ -100,6 +101,16 @@
         "description": "Wir lagern Ersatzteile, um unseren Kunden den besten Service zu bieten und schnelle Reparaturen und Wartungen zu ermöglichen."
       }
     }
+  },
+  "brands": {
+    "pageTitle": "Unsere Marken",
+    "pageSubtitle": "Autorisierter Vertriebspartner erstklassiger Industrieausrüstungsmarken",
+    "intro": "Als autorisierter Vertriebspartner und Partner führender internationaler Marken bringt OPTIMUM Ihnen die hochwertigste Industrieausrüstung aus Europa und der ganzen Welt. Jede Partnerschaft basiert auf jahrzehntelangem Vertrauen und technischer Expertise.",
+    "visitWebsite": "Website besuchen",
+    "relatedProducts": "Verwandte Produkte",
+    "verifiedPartner": "Verifizierter Partner",
+    "viewOnWebsite": "Auf offizieller Website ansehen",
+    "screenshotCaption": "OPTIMUM auf der offiziellen Markenwebsite gelistet"
   },
   "contact": {
     "pageTitle": "Kontakt",
