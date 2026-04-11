@@ -34,7 +34,7 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white/10">
                 <Link href={`/${locale}/contact`}>
                   {t('home.ctaButton')}
                 </Link>
