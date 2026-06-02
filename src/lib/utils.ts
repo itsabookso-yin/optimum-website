@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const BASE_PATH = '/optimum-website';
+export const BASE_PATH = '';
 
 export function assetPath(path: string): string {
   return `${BASE_PATH}${path}`;

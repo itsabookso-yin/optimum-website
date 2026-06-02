@@ -5,7 +5,6 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/optimum-website',
   trailingSlash: true,
   images: {
     unoptimized: true,

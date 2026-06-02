@@ -7,7 +7,7 @@ export default function RootPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('/optimum-website/zh/');
+    router.replace('/zh/');
   }, [router]);
 
   return null;
