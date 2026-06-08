@@ -10,7 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { companyInfo } from '@/data/company';
 import { localized } from '@/lib/locale';
-import { MapPin, Phone as PhoneIcon, Mail, Printer } from 'lucide-react';
+import { MapPin, Phone as PhoneIcon, Mail, Printer, CheckCircle2 } from 'lucide-react';
 import { toast } from 'sonner';
 
 const CONTACT_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyt0OxT96N520Lqii3IC407TSxXtZPnslzWmDkSPhfwyGQoElJ0sMmb58qf7uZDxMTV/exec';
@@ -19,6 +19,7 @@ export default function ContactPage() {
   const t = useTranslations();
   const locale = useLocale();
   const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -50,8 +51,7 @@ export default function ContactPage() {
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload),
       });
-      toast.success(t('contact.successMessage'));
-      form.reset();
+      setSubmitted(true);
     } catch {
       toast.error(t('contact.errorMessage'));
     } finally {
@@ -68,6 +68,16 @@ export default function ContactPage() {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
+          {submitted ? (
+            <div className="flex min-h-[50vh] items-center justify-center">
+              <div className="max-w-xl rounded-2xl bg-green-50 px-8 py-12 text-center shadow-sm">
+                <CheckCircle2 className="mx-auto h-16 w-16 text-green-600" />
+                <p className="mt-6 text-xl font-medium text-gray-900">
+                  {t('contact.successMessage')}
+                </p>
+              </div>
+            </div>
+          ) : (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Form */}
             <div className="lg:col-span-2">
@@ -186,6 +196,7 @@ export default function ContactPage() {
               </Card>
             </div>
           </div>
+          )}
         </div>
       </section>
     </>
