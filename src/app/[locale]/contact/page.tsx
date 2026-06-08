@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { PageHeader } from '@/components/shared/page-header';
 import { Card, CardContent } from '@/components/ui/card';
@@ -12,48 +13,50 @@ import { localized } from '@/lib/locale';
 import { MapPin, Phone as PhoneIcon, Mail, Printer } from 'lucide-react';
 import { toast } from 'sonner';
 
+const CONTACT_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyt0OxT96N520Lqii3IC407TSxXtZPnslzWmDkSPhfwyGQoElJ0sMmb58qf7uZDxMTV/exec';
+
 export default function ContactPage() {
   const t = useTranslations();
   const locale = useLocale();
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (submitting) return;
 
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get('name') as string;
-    const title = formData.get('title') as string || '';
-    const company = formData.get('company') as string || '';
-    const address = formData.get('address') as string || '';
-    const phone = formData.get('phone') as string || '';
-    const fax = formData.get('fax') as string || '';
-    const email = formData.get('email') as string;
-    const comments = formData.get('message') as string;
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      name: (formData.get('name') as string) || '',
+      title: (formData.get('title') as string) || '',
+      company: (formData.get('company') as string) || '',
+      address: (formData.get('address') as string) || '',
+      phone: (formData.get('phone') as string) || '',
+      fax: (formData.get('fax') as string) || '',
+      email: (formData.get('email') as string) || '',
+      message: (formData.get('message') as string) || '',
+      website: (formData.get('website') as string) || '',
+    };
 
-    if (!name || !email || !comments) {
+    if (!payload.name || !payload.email || !payload.message) {
       toast.error(t('contact.errorMessage'));
       return;
     }
 
-    // Build mailto body
-    const lines = [
-      `Name: ${name}`,
-      title ? `Title: ${title}` : '',
-      company ? `Company: ${company}` : '',
-      address ? `Address: ${address}` : '',
-      phone ? `Phone: ${phone}` : '',
-      fax ? `Fax: ${fax}` : '',
-      `Email: ${email}`,
-      '',
-      `Comments:`,
-      comments,
-    ].filter(Boolean);
-
-    const subject = encodeURIComponent(`Website Inquiry from ${name}`);
-    const body = encodeURIComponent(lines.join('\n'));
-
-    window.location.href = `mailto:${companyInfo.email}?subject=${subject}&body=${body}`;
-
-    toast.success(t('contact.successMessage'));
+    setSubmitting(true);
+    try {
+      await fetch(CONTACT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload),
+      });
+      toast.success(t('contact.successMessage'));
+      form.reset();
+    } catch {
+      toast.error(t('contact.errorMessage'));
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -73,6 +76,16 @@ export default function ContactPage() {
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Honeypot — hidden from real users, bots fill it and we drop the submission */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute h-0 w-0 overflow-hidden border-0 p-0 opacity-0"
+                  style={{ left: '-9999px' }}
+                />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="name">
@@ -125,11 +138,12 @@ export default function ContactPage() {
                 <div className="flex gap-4">
                   <Button
                     type="submit"
-                    className="bg-[#0099CC] hover:bg-[#007AA3] text-white"
+                    disabled={submitting}
+                    className="bg-[#0099CC] hover:bg-[#007AA3] text-white disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    {t('contact.submit')}
+                    {submitting ? t('contact.submitting') : t('contact.submit')}
                   </Button>
-                  <Button type="reset" variant="outline">
+                  <Button type="reset" variant="outline" disabled={submitting}>
                     {t('contact.reset')}
                   </Button>
                 </div>

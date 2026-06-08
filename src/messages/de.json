@@ -125,6 +125,7 @@
     "email": "E-Mail",
     "comments": "Kommentare",
     "submit": "Absenden",
+    "submitting": "Wird gesendet…",
     "reset": "Zurücksetzen",
     "required": "Pflichtfeld",
     "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",

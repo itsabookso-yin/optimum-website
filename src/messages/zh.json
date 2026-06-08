@@ -125,6 +125,7 @@
     "email": "電子郵件",
     "comments": "意見",
     "submit": "送出",
+    "submitting": "送出中…",
     "reset": "重設",
     "required": "必填",
     "invalidEmail": "請輸入有效的電子郵件地址",
