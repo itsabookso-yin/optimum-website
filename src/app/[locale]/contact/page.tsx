@@ -18,15 +18,13 @@ const CONTACT_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyt0OxT96N520L
 export default function ContactPage() {
   const t = useTranslations();
   const locale = useLocale();
-  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (submitting) return;
+    if (submitted) return;
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    const formData = new FormData(e.currentTarget);
     const payload = {
       name: (formData.get('name') as string) || '',
       title: (formData.get('title') as string) || '',
@@ -44,19 +42,17 @@ export default function ContactPage() {
       return;
     }
 
-    setSubmitting(true);
-    try {
-      await fetch(CONTACT_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify(payload),
-      });
-      setSubmitted(true);
-    } catch {
-      toast.error(t('contact.errorMessage'));
-    } finally {
-      setSubmitting(false);
-    }
+    // Fire-and-forget: Apps Script can cold-start for several seconds; we
+    // don't want users staring at a spinner. keepalive lets the request
+    // complete even if React unmounts the page first.
+    fetch(CONTACT_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    }).catch(() => {});
+
+    setSubmitted(true);
   }
 
   return (
@@ -148,12 +144,11 @@ export default function ContactPage() {
                 <div className="flex gap-4">
                   <Button
                     type="submit"
-                    disabled={submitting}
-                    className="bg-[#0099CC] hover:bg-[#007AA3] text-white disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="bg-[#0099CC] hover:bg-[#007AA3] text-white"
                   >
-                    {submitting ? t('contact.submitting') : t('contact.submit')}
+                    {t('contact.submit')}
                   </Button>
-                  <Button type="reset" variant="outline" disabled={submitting}>
+                  <Button type="reset" variant="outline">
                     {t('contact.reset')}
                   </Button>
                 </div>
