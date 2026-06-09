@@ -133,7 +133,10 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Prevents truck slippage during dock operations.',
         descriptionZh: '防止碼頭作業時車輛滑動。',
         descriptionDe: 'Verhindert das Wegrollen des Fahrzeugs während des Verladens.',
-        images: [bp('/images/products/dock-loading/hoermann-equipment-security.jpg')],
+        images: [
+          bp('/images/products/dock-loading/hoermann-equipment-security.jpg'),
+          bp('/images/products/dock-loading/dlm-powerstop-side.jpg'),
+        ],
         features: {
           en: ['Improves operational safety', 'Prevents forklift falls', 'Compatible with various truck sizes'],
           zh: ['提升作業安全', '防止堆高機墜落', '適用各種貨車尺寸'],
