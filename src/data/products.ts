@@ -143,10 +143,10 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'edge-of-dock',
         nameEn: 'Edge of Dock',
-        nameZh: '月台邊板',
+        nameZh: '簡易式橋板',
         nameDe: 'Rampenkante',
         descriptionEn: 'Edge of dock leveler for light-duty applications where a full dock leveler is not required.',
-        descriptionZh: '月台邊板，適用於輕載作業，無需安裝完整的月台調整板。',
+        descriptionZh: '簡易式橋板，適用於輕載作業，無需安裝完整的月台調整板。',
         descriptionDe: 'Rampenkanten-Ausgleich für leichte Anwendungen, bei denen keine vollständige Überladebrücke erforderlich ist.',
         images: [bp('/images/products/dock-loading/hoermann-dock-leveler.jpg')],
         features: {
