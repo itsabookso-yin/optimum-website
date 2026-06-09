@@ -39,7 +39,7 @@ export const productCategories: ProductCategory[] = [
     descriptionEn: 'Complete dock loading solutions for efficient logistics operations',
     descriptionZh: '完整的碼頭裝卸設備解決方案，提升物流作業效率',
     descriptionDe: 'Komplette Verladelösungen für effiziente Logistikabläufe',
-    thumbnail: bp('/images/products/dock-loading/hoermann-dock-leveler.jpg'),
+    thumbnail: bp('/images/products/dock-loading/poweramp-lhp-leveler.png'),
     items: [
       {
         id: 'dock-leveler',
