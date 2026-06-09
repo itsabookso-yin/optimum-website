@@ -94,7 +94,7 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'mobile-ramp',
         nameEn: 'Mobile Ramp',
-        nameZh: '斜坡台',
+        nameZh: '移動式斜坡台',
         nameDe: 'Mobile Rampe',
         descriptionEn: 'Mobile ramp for bridging the gap between dock and truck for forklift access.',
         descriptionZh: '移動式斜坡台，銜接月台與貨車間的高低差，方便堆高機進出。',
