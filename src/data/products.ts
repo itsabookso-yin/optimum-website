@@ -134,7 +134,6 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '防止碼頭作業時車輛滑動。',
         descriptionDe: 'Verhindert das Wegrollen des Fahrzeugs während des Verladens.',
         images: [
-          bp('/images/products/dock-loading/hoermann-equipment-security.jpg'),
           bp('/images/products/dock-loading/dlm-powerstop-side.jpg'),
         ],
         features: {
