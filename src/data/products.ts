@@ -560,6 +560,24 @@ export const productCategories: ProductCategory[] = [
           bp('/images/products/warehousing/entrance-matting.png'),
         ],
       },
+      {
+        id: 'security-bollards',
+        nameEn: 'High Security Bollards',
+        nameZh: '伸縮式交通管制桿',
+        nameDe: 'Versenkbare Hochsicherheitspoller',
+        descriptionEn: 'Retractable stainless-steel bollards that sit flush in the ground when lowered and rise on demand to control vehicle access and harden site security.',
+        descriptionZh: '伸縮式不鏽鋼交通管制桿，平時隱藏於地面，依需要升起控制車輛進出，阻擋未經授權車輛闖入，提升周界安全。',
+        descriptionDe: 'Versenkbare Edelstahlpoller, die im Ruhezustand bündig im Boden liegen und bei Bedarf ausfahren, um die Zufahrt zu steuern und die Standortsicherheit zu erhöhen.',
+        images: [
+          bp('/images/products/warehousing/security-bollards-driveway.png'),
+          bp('/images/products/warehousing/security-bollards-street.png'),
+        ],
+        features: {
+          en: ['Electric or hydraulic retractable operation', 'Stainless steel construction with high impact resistance', 'Suited to residential driveways, commercial entrances and high-security perimeters'],
+          zh: ['電動／液壓伸縮升降', '不鏽鋼材質，高抗撞擊強度', '適用住宅車道、商業入口及高安全性周界'],
+          de: ['Elektrisch oder hydraulisch versenkbar', 'Edelstahlausführung mit hoher Aufprallfestigkeit', 'Geeignet für Wohngrundstücke, gewerbliche Eingänge und Hochsicherheitsbereiche'],
+        },
+      },
     ],
   },
   {
