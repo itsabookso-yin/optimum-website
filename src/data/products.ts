@@ -148,7 +148,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Edge of dock leveler for light-duty applications where a full dock leveler is not required.',
         descriptionZh: '簡易式橋板，適用於輕載作業，無需安裝完整的斜坡式月台調整板。',
         descriptionDe: 'Überladeblech für leichte Anwendungen, bei denen keine vollständige Überladebrücke erforderlich ist.',
-        images: [bp('/images/products/dock-loading/hoermann-dock-leveler.jpg')],
+        images: [bp('/images/products/dock-loading/dlm-nl-edge-of-dock.png')],
         features: {
           en: ['Light-duty applications', 'Cost-effective solution', 'Easy installation'],
           zh: ['適用輕載作業', '經濟實惠', '安裝簡便'],
