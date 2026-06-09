@@ -100,7 +100,7 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '移動式斜坡台，銜接月台與貨車間的高低差，方便堆高機進出。',
         descriptionDe: 'Mobile Rampe zur Überbrückung des Höhenunterschieds zwischen Rampe und LKW für Staplerzugang.',
         images: [
-          bp('/images/products/dock-loading/hoermann-loading-platform.jpg'),
+          bp('/images/products/dock-loading/copperloy-yard-ramp.png'),
         ],
         features: {
           en: ['Mobile and flexible', 'Forklift accessible', 'Heavy load capacity'],
