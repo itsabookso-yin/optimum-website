@@ -48,7 +48,7 @@ export const brands: Brand[] = [
     descriptionEn: 'Swedish SIGI brand specializing in scissor lifts and vertical positioning. Products include dock lifts, goods lifts, work platforms and stage technology.',
     descriptionZh: '瑞典 SIGI 集團旗下品牌，專注於剪式升降設備及垂直定位。產品包括碼頭升降平台、貨物升降機、工作平台及舞台設備。',
     descriptionDe: 'Schwedische SIGI-Marke, spezialisiert auf Scherenhubtische und vertikale Positionierung. Produkte umfassen Verladelifte, Lastenaufzüge, Arbeitsbühnen und Bühnentechnik.',
-    productCategories: ['dock-loading', 'lift-system'],
+    productCategories: ['dock-loading'],
   },
   {
     id: 'chase',
