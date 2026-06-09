@@ -625,9 +625,7 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '入口刮泥墊系統，清除進出人員鞋底的泥沙與水分。',
         descriptionDe: 'Schmutzfangmatten-System zur Entfernung von Schmutz und Feuchtigkeit im Eingangsbereich.',
         images: [
-          bp('/images/products/warehousing/73-pwl-scraping.jpg'),
-          bp('/images/products/warehousing/73-pwl-scraping-a.jpg'),
-          bp('/images/products/warehousing/73-pwl-scraping-b.jpg'),
+          bp('/images/products/warehousing/entrance-matting.png'),
         ],
       },
     ],
