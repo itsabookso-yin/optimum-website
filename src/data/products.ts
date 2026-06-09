@@ -76,14 +76,14 @@ export const productCategories: ProductCategory[] = [
       },
       {
         id: 'table-lifter',
-        nameEn: 'Table Lifter',
+        nameEn: 'Loading Dock Table',
         nameZh: '升降平台',
         nameDe: 'Hubtisch',
-        descriptionEn: 'Hydraulic table lifter for adjusting cargo height during loading/unloading operations.',
+        descriptionEn: 'Hydraulic loading dock table for adjusting cargo height during loading/unloading operations.',
         descriptionZh: '油壓升降平台，調整貨物高度，方便裝卸作業。',
         descriptionDe: 'Hydraulischer Hubtisch zur Höhenanpassung der Ladung beim Be-/Entladen.',
         images: [
-          bp('/images/products/dock-loading/hoermann-loading-platform.jpg'),
+          bp('/images/products/dock-loading/marco-loading-dock-table.jpg'),
         ],
         features: {
           en: ['Hydraulic lifting mechanism', 'Adjustable height', 'Heavy-duty capacity'],
