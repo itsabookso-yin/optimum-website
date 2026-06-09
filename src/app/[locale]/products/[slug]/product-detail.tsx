@@ -8,7 +8,6 @@ import { ProductImageGallery } from '@/components/shared/product-image-gallery';
 import { productCategories, getProductBySlug } from '@/data/products';
 import { localized } from '@/lib/locale';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { ChevronRight } from 'lucide-react';
 
@@ -113,13 +112,6 @@ export default function ProductDetail() {
                               </div>
                             )}
 
-                            <div className="mt-4">
-                              <Badge variant="secondary" className="text-xs">
-                                {category.items.length > 1
-                                  ? `${index + 1} / ${category.items.length}`
-                                  : localized(locale, category.nameEn, category.nameZh, category.nameDe)}
-                              </Badge>
-                            </div>
                           </div>
                         </div>
                       </CardContent>
