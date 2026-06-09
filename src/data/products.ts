@@ -44,12 +44,12 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'dock-leveler',
         nameEn: 'Dock Leveler',
-        nameZh: '月台調整板',
+        nameZh: '斜坡式月台調整板',
         nameDe: 'Überladebrücke',
         descriptionEn: 'Adjusts the height difference between the dock and the container truck platform, improving loading/unloading speed.',
         descriptionZh: '調整貨櫃月台與貨櫃車台高低差，提昇作業速度，省時省力。',
         descriptionDe: 'Gleicht den Höhenunterschied zwischen Rampe und LKW-Ladefläche aus und verbessert die Be-/Entladegeschwindigkeit.',
-        images: [bp('/images/products/dock-loading/hoermann-dock-leveler.jpg')],
+        images: [bp('/images/products/dock-loading/poweramp-lhp-leveler.png')],
         features: {
           en: ['Adjusts dock-to-truck height difference', 'Improves loading/unloading speed', 'Saves time and effort'],
           zh: ['調整貨櫃月台與貨櫃車台高低差', '提昇作業速度', '省時省力'],
@@ -146,7 +146,7 @@ export const productCategories: ProductCategory[] = [
         nameZh: '簡易式橋板',
         nameDe: 'Überladeblech',
         descriptionEn: 'Edge of dock leveler for light-duty applications where a full dock leveler is not required.',
-        descriptionZh: '簡易式橋板，適用於輕載作業，無需安裝完整的月台調整板。',
+        descriptionZh: '簡易式橋板，適用於輕載作業，無需安裝完整的斜坡式月台調整板。',
         descriptionDe: 'Überladeblech für leichte Anwendungen, bei denen keine vollständige Überladebrücke erforderlich ist.',
         images: [bp('/images/products/dock-loading/hoermann-dock-leveler.jpg')],
         features: {
