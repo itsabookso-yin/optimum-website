@@ -166,6 +166,11 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '碼頭照明設備，確保夜間作業安全。',
         descriptionDe: 'Verladerampen-Beleuchtung für sicheren Nachtbetrieb.',
         images: [bp('/images/products/dock-loading/fostoria-dkl-dock-light.jpg')],
+        features: {
+          en: ['Adjustable arm for flexible positioning', 'Bright illumination for nighttime loading operations', 'Durable steel housing with safety guard'],
+          zh: ['可調式燈臂，照射角度靈活', '高亮度光源，確保夜間裝卸作業安全', '鋼製外殼搭配防護網，堅固耐用'],
+          de: ['Verstellbarer Arm für flexible Ausrichtung', 'Helle Ausleuchtung für nächtliche Verladevorgänge', 'Robustes Stahlgehäuse mit Schutzgitter'],
+        },
       },
     ],
   },
@@ -267,6 +272,11 @@ export const productCategories: ProductCategory[] = [
         images: [
           bp('/images/products/door-system/hoermann-office-door.jpg'),
         ],
+        features: {
+          en: ['Sleek professional appearance', 'Sound and thermal insulation', 'Various finishes and configurations'],
+          zh: ['俐落專業外觀', '隔音及隔熱效果', '多種樣式及規格可選'],
+          de: ['Schlichtes professionelles Erscheinungsbild', 'Schall- und Wärmedämmung', 'Verschiedene Ausführungen verfügbar'],
+        },
       },
     ],
   },
@@ -289,6 +299,11 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '重型碼頭防撞器，保護建築結構。',
         descriptionDe: 'Schwerlast-Rampenpuffer zum Gebäudeschutz.',
         images: [bp('/images/products/warehousing/71-pwl-bumper-d6.jpg')],
+        features: {
+          en: ['Heavy-duty rubber or laminated construction', 'Absorbs impact energy from docking trucks', 'Protects building structure and dock equipment'],
+          zh: ['重型橡膠或積層結構', '吸收貨車進站時的撞擊能量', '保護建築結構及碼頭設備'],
+          de: ['Schwere Gummi- oder Verbundausführung', 'Absorbiert Aufprallenergie beim Andocken', 'Schützt Gebäudestruktur und Verladetechnik'],
+        },
       },
       {
         id: 'corner-guard',
@@ -299,6 +314,11 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '建築柱角及轉角保護器。',
         descriptionDe: 'Eckschutzprofile für Gebäudesäulen und Ecken.',
         images: [bp('/images/products/warehousing/71-pwl-corner-guard.jpg')],
+        features: {
+          en: ['Protects columns and corners from forklift impact', 'High-visibility safety colors', 'Easy bolt-on or surface-mount installation'],
+          zh: ['保護柱角及轉角，避免堆高機撞擊', '高辨識度警示配色', '可鎖固或表面安裝，施工簡便'],
+          de: ['Schützt Säulen und Ecken vor Staplerstößen', 'Hochsichtbare Warnfarben', 'Einfache Schraub- oder Aufputzmontage'],
+        },
       },
       {
         id: 'parking-block',
@@ -309,6 +329,11 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: '橡膠停車墩，用於車輛定位。',
         descriptionDe: 'Gummi-Parkplatzsperren zur Fahrzeugpositionierung.',
         images: [bp('/images/products/warehousing/72-pwl-parking-blocks.jpg')],
+        features: {
+          en: ['Heavy-duty rubber construction', 'Reflective markings for visibility', 'Easy installation with anchor bolts'],
+          zh: ['重型橡膠材質', '反光標示，提升辨識度', '錨栓固定，安裝簡便'],
+          de: ['Schwere Gummiausführung', 'Reflektierende Markierungen für Sichtbarkeit', 'Einfache Montage mit Ankerbolzen'],
+        },
       },
       {
         id: 'entrance-matting',
@@ -321,6 +346,11 @@ export const productCategories: ProductCategory[] = [
         images: [
           bp('/images/products/warehousing/entrance-matting.png'),
         ],
+        features: {
+          en: ['Removes dirt and moisture from foot traffic', 'Aluminum frame with replaceable inserts', 'Custom sizing for any entryway'],
+          zh: ['清除進出人員鞋底的泥沙與水分', '鋁製框架搭配可更換墊塊', '依入口尺寸客製化'],
+          de: ['Entfernt Schmutz und Feuchtigkeit von Schuhen', 'Aluminiumrahmen mit austauschbaren Einlagen', 'Maßanfertigung für jeden Eingang'],
+        },
       },
       {
         id: 'security-bollards',
@@ -577,6 +607,11 @@ export const productCategories: ProductCategory[] = [
         descriptionZh: 'Schneider製藥加工設備。',
         descriptionDe: 'Schneider pharmazeutische Verarbeitungsanlagen.',
         images: [bp('/images/products/pharmacy-system/6-11-schneider.jpg')],
+        features: {
+          en: ['Pharmaceutical-grade construction', 'Reliable processing performance', 'GMP compliant design'],
+          zh: ['符合製藥規格設計', '穩定可靠的加工性能', '符合GMP規範'],
+          de: ['Pharmazeutische Konstruktionsqualität', 'Zuverlässige Verarbeitungsleistung', 'GMP-konformes Design'],
+        },
       },
     ],
   },
