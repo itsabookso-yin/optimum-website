@@ -165,7 +165,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Loading dock lights for safe nighttime operations.',
         descriptionZh: '碼頭照明設備，確保夜間作業安全。',
         descriptionDe: 'Verladerampen-Beleuchtung für sicheren Nachtbetrieb.',
-        images: [bp('/images/products/dock-loading/hoermann-equipment-security.jpg')],
+        images: [bp('/images/products/dock-loading/fostoria-dkl-dock-light.jpg')],
       },
     ],
   },
