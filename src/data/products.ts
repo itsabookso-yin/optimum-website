@@ -42,6 +42,40 @@ export const productCategories: ProductCategory[] = [
     thumbnail: bp('/images/products/dock-loading/poweramp-lhp-leveler.png'),
     items: [
       {
+        id: 'dobo-system',
+        nameEn: 'DOBO System (Docking Before Opening)',
+        nameZh: 'DOBO 先靠泊後開門系統',
+        nameDe: 'DOBO-System (Docking Before Opening)',
+        descriptionEn: 'Hörmann integrated loading system that lets the lorry dock with all doors closed. The dock shelter seals the vehicle first; the hall door and the truck doors are only opened once docking is complete — protecting the cold chain, hygiene and security throughout the entire process.',
+        descriptionZh: 'Hörmann 整合式碼頭系統，貨車於門封內完成靠泊後，廠房門與貨車後門才依序開啟。先密封、後開門的設計，全程維持冷鏈、潔淨與安全，是冷凍冷藏倉、食品藥品物流的首選方案。',
+        descriptionDe: 'Hörmann-Verladesystem, bei dem der LKW bei geschlossenen Toren andockt. Erst nach vollständiger Abdichtung durch das Torabdichtsystem öffnen sich Hallentor und LKW-Türen — für lückenlose Kühlkette, Hygiene und Sicherheit.',
+        images: [
+          bp('/images/products/dock-loading/hoermann-dobo-loading-houses.jpg'),
+          bp('/images/products/dock-loading/hoermann-dobo-doors-closed.jpg'),
+          bp('/images/products/dock-loading/hoermann-dobo-doors-open.jpg'),
+        ],
+        features: {
+          en: [
+            'Closed-door docking maintains the cold chain and hygienic transport',
+            'Saves approx. 5 minutes per lorry — driver does not exit to open doors',
+            'Anti-theft: hall door and truck doors stay locked until loading starts',
+            'Integrated docking assistant, DAS 3 DOBO dock seal, HTL2 ISO dock leveller and VBV4/VBV5 movable buffers',
+          ],
+          zh: [
+            '關門靠泊，全程維持冷鏈與潔淨運輸',
+            '每車省約 5 分鐘 — 駕駛無需下車開門',
+            '防竊保護：裝卸前廠房門及貨車後門保持鎖閉',
+            '整合導引系統、DAS 3 DOBO 門封、HTL2 ISO 月台調整板及 VBV4／VBV5 活動緩衝器',
+          ],
+          de: [
+            'Andocken mit geschlossenen Türen erhält die Kühlkette und hygienischen Transport',
+            'Spart ca. 5 Minuten pro LKW — Fahrer muss zum Türöffnen nicht aussteigen',
+            'Diebstahlschutz: Hallentor und LKW-Türen bleiben bis zum Beladen verschlossen',
+            'Integration aus Einweishilfe, Torabdichtung DAS 3 DOBO, Überladebrücke HTL2 ISO und beweglichen Puffern VBV4/VBV5',
+          ],
+        },
+      },
+      {
         id: 'dock-leveler',
         nameEn: 'Dock Leveler',
         nameZh: '斜坡式月台調整板',
