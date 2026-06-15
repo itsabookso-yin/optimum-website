@@ -162,7 +162,7 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'truck-restraint',
         nameEn: 'Truck Restraint',
-        nameZh: '貨櫃車固定器',
+        nameZh: '卡車安全掛勾器',
         nameDe: 'LKW-Feststellanlage',
         descriptionEn: 'Prevents truck slippage during dock operations.',
         descriptionZh: '防止碼頭作業時車輛滑動。',
