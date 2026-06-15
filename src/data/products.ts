@@ -44,7 +44,7 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'dobo-system',
         nameEn: 'DOBO System (Docking Before Opening)',
-        nameZh: 'DOBO 先靠泊後開門系統',
+        nameZh: '冷鏈物流氣密碼頭系統',
         nameDe: 'DOBO-System (Docking Before Opening)',
         descriptionEn: 'Hörmann integrated loading system that lets the lorry dock with all doors closed. The dock shelter seals the vehicle first; the hall door and the truck doors are only opened once docking is complete — protecting the cold chain, hygiene and security throughout the entire process.',
         descriptionZh: 'Hörmann 整合式碼頭系統，貨車於門封內完成靠泊後，廠房門與貨車後門才依序開啟。先密封、後開門的設計，全程維持冷鏈、潔淨與安全，是冷凍冷藏倉、食品藥品物流的首選方案。',
