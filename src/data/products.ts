@@ -478,6 +478,23 @@ export const productCategories: ProductCategory[] = [
           de: ['Leichte Konstruktion für einfache Bedienung', 'Transluzente Paneele als grünes Baumaterial für natürliches Tageslicht', 'Große lichte Öffnung für Flugzeugzugang'],
         },
       },
+      {
+        id: 'insulated-traffic-door',
+        nameEn: 'Insulated Traffic Door',
+        nameZh: '保溫交通門',
+        nameDe: 'Isolierte Pendeltür',
+        descriptionEn: 'Twin-leaf insulated traffic door with PVC foam-core panels and spring-return hinges. Operators and trolleys simply push through; the door self-closes immediately with no waiting and minimal cold air loss. Ideal for cold-store and chilled-store entry/exit operations, fresh produce distribution centres and food processing plants.',
+        descriptionZh: '雙片式保溫交通門，門板採 PVC 泡棉夾層結構，搭配自動回彈鉸鏈，人員或推車經過即推開、放手後立即自動關閉。快速開閉無延遲，有效減少冷氣外洩，適用於冷凍冷藏庫進出作業、生鮮配送中心及食品加工廠等高頻通行場域。',
+        descriptionDe: 'Zweiflüglige isolierte Pendeltür mit PVC-Schaumkern-Paneelen und Rückstellgelenken. Personen und Wagen drücken die Tür beim Durchgang einfach auf — sie schließt sich anschließend sofort selbst und minimiert den Kaltluftverlust. Ideal für die Ein- und Ausfahrt von Tiefkühl- und Kühlräumen, Frischedistributionszentren und Lebensmittelproduktionsstätten.',
+        images: [
+          bp('/images/products/special-door/insulated-traffic-door.jpg'),
+        ],
+        features: {
+          en: ['Designed for cold-store and chilled-store traffic', 'Spring-return action — rapid open/close with no delay', 'Insulated PVC-foam core panels minimise cold air loss', 'Viewing windows and bumper guards for safe two-way traffic'],
+          zh: ['適用於冷凍冷藏庫進出作業', '快速開閉無延遲，搭配自動回彈鉸鏈', 'PVC 泡棉夾層門板，減少冷氣外洩', '附觀察窗及防撞護板，雙向通行安全'],
+          de: ['Speziell für Tiefkühl- und Kühlraumverkehr ausgelegt', 'Federrückstellung — schnelles Öffnen und Schließen ohne Verzögerung', 'Isolierte PVC-Schaumkern-Paneele minimieren Kaltluftverlust', 'Sichtfenster und Stoßschutz für sicheren Zweirichtungsverkehr'],
+        },
+      },
     ],
   },
   {
