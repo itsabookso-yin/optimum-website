@@ -447,23 +447,6 @@ export const productCategories: ProductCategory[] = [
         },
       },
       {
-        id: 'cold-storage-door',
-        nameEn: 'Cold-Storage Door',
-        nameZh: '冷凍庫門',
-        nameDe: 'Kühlhaustür',
-        descriptionEn: 'Insulated doors for cold storage and refrigeration facilities.',
-        descriptionZh: '隔熱保溫門，適用於冷凍庫及冷藏設施。',
-        descriptionDe: 'Isolierte Türen für Kühlhäuser und Kühlanlagen.',
-        images: [
-          bp('/images/products/special-door/hoermann-fire-curtain.jpg'),
-        ],
-        features: {
-          en: ['Heavy insulation', 'Airtight seal', 'Temperature rated'],
-          zh: ['高度隔熱', '氣密封條', '耐溫等級'],
-          de: ['Starke Isolierung', 'Luftdichte Abdichtung', 'Temperaturbemessen'],
-        },
-      },
-      {
         id: 'wind-resistant-door',
         nameEn: 'Extra-Large Wind-Resistant Door',
         nameZh: '超大型抗風門',
