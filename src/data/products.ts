@@ -221,10 +221,10 @@ export const productCategories: ProductCategory[] = [
       {
         id: 'overhead-sectional',
         nameEn: 'Overhead Sectional Door',
-        nameZh: '組合式彩色鋼板門',
+        nameZh: '多視窗滑升門',
         nameDe: 'Sektionaltor',
         descriptionEn: 'Overhead sectional doors with insulated panels for industrial buildings.',
-        descriptionZh: '組合式彩色鋼板門，具隔熱保溫效果，適用於工業廠房。',
+        descriptionZh: '適用於展示商場及採光作業廠所。',
         descriptionDe: 'Sektionaltore mit isolierten Paneelen für Industriegebäude.',
         images: [
           bp('/images/products/door-system/hoermann-sectional-door.jpg'),
