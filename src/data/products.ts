@@ -220,19 +220,19 @@ export const productCategories: ProductCategory[] = [
     items: [
       {
         id: 'overhead-sectional',
-        nameEn: 'Overhead Sectional Door',
+        nameEn: 'Multi-Window Sectional Door',
         nameZh: '多視窗滑升門',
-        nameDe: 'Sektionaltor',
-        descriptionEn: 'Overhead sectional doors with insulated panels for industrial buildings.',
+        nameDe: 'Mehrfenster-Sektionaltor',
+        descriptionEn: 'Suitable for showrooms and workshops requiring natural daylight.',
         descriptionZh: '適用於展示商場及採光作業廠所。',
-        descriptionDe: 'Sektionaltore mit isolierten Paneelen für Industriegebäude.',
+        descriptionDe: 'Geeignet für Ausstellungsräume und Werkstätten mit Tageslichtbedarf.',
         images: [
           bp('/images/products/door-system/hoermann-sectional-door.jpg'),
         ],
         features: {
-          en: ['Insulated panels', 'Various sizes available', 'Electric or manual operation'],
-          zh: ['隔熱保溫面板', '多種尺寸可選', '電動或手動操作'],
-          de: ['Isolierte Paneele', 'Verschiedene Größen verfügbar', 'Elektrischer oder manueller Betrieb'],
+          en: ['Multi-window panels for abundant natural daylight', 'Modern aluminium frame design for showrooms and architectural projects', 'Electric or manual operation'],
+          zh: ['多視窗面板，引入充足自然採光', '現代鋁框設計，適合展示商場及建築美學需求', '電動或手動操作'],
+          de: ['Mehrfenster-Paneele für reichlich Tageslicht', 'Modernes Aluminiumrahmen-Design für Ausstellungsräume und Architekturprojekte', 'Elektrischer oder manueller Betrieb'],
         },
       },
       {
