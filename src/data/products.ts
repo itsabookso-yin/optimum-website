@@ -461,6 +461,23 @@ export const productCategories: ProductCategory[] = [
           de: ['Windbeständig', 'Sicherheitszertifiziert', 'Schwerlastkonstruktion'],
         },
       },
+      {
+        id: 'aircraft-hangar-door',
+        nameEn: 'Aircraft Hangar Door',
+        nameZh: '飛機廠棚門',
+        nameDe: 'Flugzeughangartor',
+        descriptionEn: 'Large-format hangar doors for aircraft maintenance and storage facilities, combining a lightweight structure with translucent panels for natural daylight throughout the hangar.',
+        descriptionZh: '大型飛機廠棚門，搭配半透光面板引入自然採光，結構輕量化、開啟省力，適用於飛機維修庫及機棚等大跨距空間。',
+        descriptionDe: 'Großformatige Hangartore für Flugzeugwartung und -lagerung, kombiniert eine leichte Konstruktion mit transluzenten Paneelen für natürliches Tageslicht im gesamten Hangar.',
+        images: [
+          bp('/images/products/special-door/hoermann-aircraft-hangar-door.jpg'),
+        ],
+        features: {
+          en: ['Lightweight construction for easy operation', 'Translucent panels act as a green building material for natural daylight', 'Large clear opening for aircraft access'],
+          zh: ['輕便易開', '採光綠建材，引入自然光線', '大跨距開口，適合飛機進出'],
+          de: ['Leichte Konstruktion für einfache Bedienung', 'Transluzente Paneele als grünes Baumaterial für natürliches Tageslicht', 'Große lichte Öffnung für Flugzeugzugang'],
+        },
+      },
     ],
   },
   {
