@@ -273,7 +273,7 @@ export const productCategories: ProductCategory[] = [
         descriptionEn: 'Space-saving folding doors for wide openings.',
         descriptionZh: '節省空間的摺疊門，適用於大開口區域。',
         descriptionDe: 'Platzsparende Falttüren für breite Öffnungen.',
-        images: [bp('/images/products/door-system/hoermann-folding-door.jpg')],
+        images: [bp('/images/products/door-system/hoermann-folding-glazed-door.jpg')],
         features: {
           en: ['Space-saving design', 'Wide opening capability', 'Durable construction'],
           zh: ['節省空間設計', '大開口能力', '堅固耐用'],
