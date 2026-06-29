@@ -483,9 +483,9 @@ export const productCategories: ProductCategory[] = [
         nameEn: 'Insulated Traffic Door',
         nameZh: '保溫交通門',
         nameDe: 'Isolierte Pendeltür',
-        descriptionEn: 'Twin-leaf personnel impact door with insulated PVC foam-core panels, viewing windows and bumper guards.',
-        descriptionZh: '雙片式人員推門，門板採 PVC 泡棉夾層保溫結構，附觀察窗與防撞護板。',
-        descriptionDe: 'Zweiflüglige Personen-Pendeltür mit isolierten PVC-Schaumkern-Paneelen, Sichtfenstern und Stoßschutz.',
+        descriptionEn: 'Twin-leaf personnel and forklift impact door with insulated PVC foam-core panels, viewing windows and bumper guards.',
+        descriptionZh: '雙片式人員及堆高機推門，門板採 PVC 泡棉夾層保溫結構，附觀察窗與防撞護板。',
+        descriptionDe: 'Zweiflüglige Pendeltür für Personen und Gabelstapler mit isolierten PVC-Schaumkern-Paneelen, Sichtfenstern und Stoßschutz.',
         images: [
           bp('/images/products/special-door/insulated-traffic-door.jpg'),
         ],
